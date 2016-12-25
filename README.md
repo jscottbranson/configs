@@ -40,6 +40,11 @@ privileges to install software using apt-get.
 	```
 
 2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
+	*To automatically create symbolic links:
+	```bash
+	bash ~/configs/link_maker
+	```
+	*To manually create symbolic links:
 	```bash
 	ln -s ~/configs/.file_name ~/.file_name
 	```
@@ -78,6 +83,5 @@ Creating a consistent environment I can use for web design and data analysis.
 Anyone is free to use, modify, and distribute any of these files.
 
 ##Future Plans
-At some point, I
-hope to provide a script that will automatically generate symlinks to each of
-the configuration files.
+Continue to update these configuration files to maximize efficiency for data
+analysis and editing HTML, CSS, Python, and other files.
