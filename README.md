@@ -64,9 +64,9 @@ privileges to install software using apt-get.
 
 		* To view all of the prospective configuration files:
 
-		```bash
-		ls -a ~/configs/
-		```
+			```bash
+			ls -a ~/configs/
+			```
 
 ###Post Install Steps
 1. Install the Vim plugins:
