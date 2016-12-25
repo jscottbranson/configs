@@ -16,6 +16,7 @@ Create symlinks in your home directory to each of the dot files in the ~/configs
 ```bash
 ln -s ~/configs/.file_name ~/.file_name
 ```
+Replace *.file_name* with the name of the dot file you would like to use.
 
 To view all of the prospective configuration files:
 ```bash
