@@ -1,5 +1,5 @@
 # configs
-Configuration Files For Vim, Tmux, &amp; R
+Configuration files for Vim, Tmux, &amp; R
 
 ##Synopsis
 This purpose of this project is to provide a consistent set of configuration
@@ -12,13 +12,22 @@ multiple computers.
 	```bash
 	apt-get install git
 	```
+2. Vim is a required text editor that interfaces with R
+	```bash
+	apt-get install vim
+	```
 
-2. Tmux adds a number of features to the terminal editor. To install Tmux on a Debian based system, as a super user:
+3. R is required for statistical analyses
+	```bash
+	apt-get install r-base
+	```
+
+4. Tmux adds a number of features to the terminal editor. To install Tmux on a Debian based system, as a super user:
 	```bash
 	apt-get install tmux
 	```
 
-3. Vundle is required to install the plugins in the .vimrc configuration file.
+5. Vundle is required to install the plugins in the .vimrc configuration file.
 	Vundle is available on [GitHub](https://github.com/VundleVim/Vundle.vim)
 
 ###Installation Steps
