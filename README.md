@@ -6,35 +6,40 @@ This purpose of this project is to provide a consistent set of configuration
 files for terminal applications, such as Vim, Tmux, and R, that I can access from
 multiple computers.
 
-##Installation
+## Installation
 ### Required Software
-Vundle is required to install the plugins in the .vimrc configuration file.
+1. Vundle is required to install the plugins in the .vimrc configuration file.
 Vundle is available on [GitHub](https://github.com/VundleVim/Vundle.vim)
 
-Tmux adds a number of features to the terminal editor. To install Tmux on a Debian based system, as a super user:
+2. Tmux adds a number of features to the terminal editor. To install Tmux on a Debian based system, as a super user:
 ```bash
 apt-get install tmux
 ```
 
-###Installation Steps
-Clone the repository into your local home directory:
+3. Git is required for installation:
 ```bash
-git clone https://github.com/jscottbranson/configs.git ~/configs
+apt-get install git
 ```
 
-Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
+###Installation Steps
+1. Clone the repository into your local home directory:
+```bash
+git clone https://github.com/jscottbranson/configs ~/configs
+```
+
+2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
 ```bash
 ln -s ~/configs/.file_name ~/.file_name
 ```
 Replace *.file_name* with the name of the dot file you would like to use.
 
-To view all of the prospective configuration files:
+3. To view all of the prospective configuration files:
 ```bash
 ls -a ~/configs/
 ```
 
 ###Post Install Steps
-Install the Vim plugins:
+1. Install the Vim plugins:
 ```bash
 vim
 ```
