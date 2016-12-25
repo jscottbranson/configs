@@ -42,13 +42,13 @@ privileges to install software using apt-get.
 	* To automatically create symbolic links:  
 		```bash
 		bash ~/configs/link_maker
-		```
+		```  
 		Note that this script will automatically overwrite any existing configuration
 		files with symbolic links to the files in this repository.
 	* To manually create symbolic links:  
 		```bash
 		ln -s ~/configs/.file_name ~/.file_name
-		```
+		```  
 		Replace *.file_name* with the name of the dot file you would like to use.
 
 3. To view all of the prospective configuration files:  
