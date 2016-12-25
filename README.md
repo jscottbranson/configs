@@ -1,5 +1,5 @@
 # configs
-[Configs] is a directory that contains configuration files for Vim, Tmux, &amp; R, as well as a script to automatically create symbolic links to the configuration files in the users home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R], which is set to be automatically installed by [Vundle].
+[Configs] is a directory that contains configuration files for Vim, Tmux, and R, as well as a script to automatically create symbolic links to the configuration files in the users home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R], which is set to be automatically installed by [Vundle].
 
 ##Synopsis
 This purpose of this project is to provide a consistent set of configuration
