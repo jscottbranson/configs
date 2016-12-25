@@ -8,18 +8,18 @@ multiple computers.
 
 ## Installation
 ### Required Software
-1. Vundle is required to install the plugins in the .vimrc configuration file.
-	Vundle is available on [GitHub](https://github.com/VundleVim/Vundle.vim)
+1. Git is required for installation:
+	```bash
+	apt-get install git
+	```
 
 2. Tmux adds a number of features to the terminal editor. To install Tmux on a Debian based system, as a super user:
 	```bash
 	apt-get install tmux
 	```
 
-3. Git is required for installation:
-	```bash
-	apt-get install git
-	```
+3. Vundle is required to install the plugins in the .vimrc configuration file.
+	Vundle is available on [GitHub](https://github.com/VundleVim/Vundle.vim)
 
 ###Installation Steps
 1. Clone the repository into your local home directory:
