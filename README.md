@@ -1,5 +1,5 @@
 # configs
-Configuration files for Vim, Tmux, &amp; R
+[Configs] is a directory that contains configuration files for Vim, Tmux, &amp; R, as well as a script to automatically create symbolic links to the configuration files in the users home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R]
 
 ##Synopsis
 This purpose of this project is to provide a consistent set of configuration
@@ -15,7 +15,7 @@ privileges to install software using apt-get.
 	```bash
 	apt-get install git
 	```
-2. Vim is a required text editor that interfaces with R
+2. Vim is a text editor that can interface with R using [Nvim-R]
 	```bash
 	apt-get install vim
 	```
@@ -30,8 +30,7 @@ privileges to install software using apt-get.
 	apt-get install tmux
 	```
 
-5. Vundle is required to install the plugins in the .vimrc configuration file.
-	Vundle is available on [GitHub](https://github.com/VundleVim/Vundle.vim)
+5. [Vundle] is required to install the plugins in the .vimrc configuration file.
 
 ###Installation Steps
 1. Clone the repository into your local home directory:
@@ -41,11 +40,11 @@ privileges to install software using apt-get.
 
 2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
 	* To automatically create symbolic links:
-		```bash
-		bash ~/configs/link_maker
-		```
-		Note that this script will automatically overwrite any existing configuration
-		files with symbolic links to the files in this repository.
+	```bash
+	bash ~/configs/link_maker
+	```
+	Note that this script will automatically overwrite any existing configuration
+	files with symbolic links to the files in this repository.
 	* To manually create symbolic links:
 		```bash
 		ln -s ~/configs/.file_name ~/.file_name
@@ -87,3 +86,7 @@ Anyone is free to use, modify, and distribute any of these files.
 ##Future Plans
 Continue to update these configuration files to maximize efficiency for data
 analysis and editing HTML, CSS, Python, and other files.
+
+[configs]:https://github.com/jscottbranson/configs
+[Vundle]:https://github.com/VundleVim/Vundle.vim
+[Nvim-R]:https://github.com/jalvesaq/Nvim-R
