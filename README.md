@@ -62,11 +62,11 @@ privileges to install software using apt-get.
 
 		Replace *.file_name* with the name of the dot file you would like to use.
 
-3. To view all of the prospective configuration files:
+		* To view all of the prospective configuration files:
 
-	```bash
-	ls -a ~/configs/
-	```
+		```bash
+		ls -a ~/configs/
+		```
 
 ###Post Install Steps
 1. Install the Vim plugins:
@@ -74,7 +74,7 @@ privileges to install software using apt-get.
 	Launch `vim` and run `:PluginInstall`
 
 ##Editing Configuration Files
-To edit configuration files navigate to the ~/configs directory:
+To edit a configuration file, navigate to the ~/configs directory:
 
 ```bash
 cd ~/configs/
