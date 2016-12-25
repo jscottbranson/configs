@@ -7,6 +7,16 @@ files for terminal applications, such as Vim, Tmux, and R, that I can access fro
 multiple computers.
 
 ##Installation
+### Required Software
+Vundle is required to install the plugins in the .vimrc configuration file.
+Vundle is available on [GitHub](https://github.com/VundleVim/Vundle.vim)
+
+Tmux adds a number of features to the terminal editor. To install Tmux on a Debian based system, as a super user:
+```bash
+apt-get install tmux
+```
+
+###Installation Steps
 Clone the repository into your local home directory:
 ```bash
 git clone https://github.com/jscottbranson/configs.git ~/configs
@@ -21,6 +31,16 @@ Replace *.file_name* with the name of the dot file you would like to use.
 To view all of the prospective configuration files:
 ```bash
 ls -a ~/configs/
+```
+
+###Post Install Steps
+Install the Vim plugins:
+```bash
+vim
+```
+
+```vim
+:PluginInstall
 ```
 
 ##Editing Configuration Files
