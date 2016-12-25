@@ -46,10 +46,10 @@ privileges to install software using apt-get.
 	Note that this script will automatically overwrite any existing configuration
 	files with symbolic links to the files in this repository.
 	* To manually create symbolic links:
-	```bash
-	ln -s ~/configs/.file_name ~/.file_name
-	```
-	Replace *.file_name* with the name of the dot file you would like to use.
+		```bash
+		ln -s ~/configs/.file_name ~/.file_name
+		```
+		Replace *.file_name* with the name of the dot file you would like to use.
 
 3. To view all of the prospective configuration files:
 	```bash
@@ -58,13 +58,7 @@ privileges to install software using apt-get.
 
 ###Post Install Steps
 1. Install the Vim plugins:
-	```bash
-	vim
-	```
-
-	```vim
-	:PluginInstall
-	```
+	Launch `vim` and run `:PluginInstall`
 
 ##Editing Configuration Files
 To edit configuration files navigate to the ~/configs directory:
