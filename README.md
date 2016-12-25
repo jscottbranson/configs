@@ -33,40 +33,40 @@ privileges to install software using apt-get.
 5. [Vundle] is required to install the plugins in the .vimrc configuration file.
 
 ###Installation Steps
-1. Clone the repository into your local home directory:
+1. Clone the repository into your local home directory:  
 	```bash
 	git clone https://github.com/jscottbranson/configs ~/configs
 	```
 
-2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
-	* To automatically create symbolic links:
-	```bash
-	bash ~/configs/link_maker
-	```
-	Note that this script will automatically overwrite any existing configuration
-	files with symbolic links to the files in this repository.
-	* To manually create symbolic links:
+2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:  
+	* To automatically create symbolic links:  
+		```bash
+		bash ~/configs/link_maker
+		```
+		Note that this script will automatically overwrite any existing configuration
+		files with symbolic links to the files in this repository.
+	* To manually create symbolic links:  
 		```bash
 		ln -s ~/configs/.file_name ~/.file_name
 		```
 		Replace *.file_name* with the name of the dot file you would like to use.
 
-3. To view all of the prospective configuration files:
+3. To view all of the prospective configuration files:  
 	```bash
 	ls -a ~/configs/
 	```
 
 ###Post Install Steps
-1. Install the Vim plugins:
+1. Install the Vim plugins:  
 	Launch `vim` and run `:PluginInstall`
 
 ##Editing Configuration Files
-To edit configuration files navigate to the ~/configs directory:
+To edit configuration files navigate to the ~/configs directory:  
 ```bash
 cd ~/configs/
 ```
 
-Then use a text editor to edit the necessary configuration files:
+Then use a text editor to edit the necessary configuration files:  
 ```bash
 vim .file_name
 ```
