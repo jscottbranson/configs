@@ -62,7 +62,7 @@ privileges to install software using apt-get.
     ln -s ~/configs/.file_name ~/.file_name
 		```
 
-    Replace *.file_name* with the name of the dot file you would like to use.
+			Replace *.file_name* with the name of the dot file you would like to use.
 
 3. To view all of the prospective configuration files:
 
@@ -87,6 +87,9 @@ Then use a text editor to edit the necessary configuration files:
 ```bash
 vim .file_name
 ```
+
+Change *.file_name* to the name of the configuration file you would like to
+edit.
 
 ##Motivation
 Creating a consistent environment I can use for web design and data analysis.
