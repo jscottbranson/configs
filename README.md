@@ -40,13 +40,13 @@ privileges to install software using apt-get.
 	```
 
 2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
-*To automatically create symbolic links:
+* To automatically create symbolic links:
 	```bash
 	bash ~/configs/link_maker
 	```
 	Note that this script will automatically overwrite any existing configuration
 	files with symbolic links to the files in this repository.
-*To manually create symbolic links:
+* To manually create symbolic links:
 	```bash
 	ln -s ~/configs/.file_name ~/.file_name
 	```
