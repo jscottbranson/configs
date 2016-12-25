@@ -1,5 +1,5 @@
 #!/bin/bash
-ln -s ~/configs/.vimrc ~/.vimrc
-ln -s ~/configs/.Rprofile ~/.Rprofile
-ln -s ~/configs/.tmux.conf ~/.tmux.conf
-echo All symbolic links were created successfully.
+ln -sf ~/configs/.vimrc ~/.vimrc
+ln -sf ~/configs/.Rprofile ~/.Rprofile
+ln -sf ~/configs/.tmux.conf ~/.tmux.conf
+echo If there weren\'t any error messages, then all symbolic links were created successfully.
