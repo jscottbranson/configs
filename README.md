@@ -12,7 +12,7 @@ The following steps are targeted toward Debian users. You must have super-user
 privileges to install software using apt-get.
 
 1. Git is required for installation:  
-	```bash
+	```
 	apt-get install git
 	```
 2. Vim is a text editor that can interface with R using [Nvim-R]:  
@@ -40,11 +40,15 @@ privileges to install software using apt-get.
 
 2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:  
 	* To automatically create symbolic links:  
-      bash ~/configs/link_maker
+		```
+    bash ~/configs/link_maker
+		```
 		Note that this script will automatically overwrite any existing configuration
 		files with symbolic links to the files in this repository.
 	* To manually create symbolic links:  
-		    ln -s ~/configs/.file_name ~/.file_name
+		```
+    ln -s ~/configs/.file_name ~/.file_name
+		```
 		Replace *.file_name* with the name of the dot file you would like to use.
 
 3. To view all of the prospective configuration files:  
