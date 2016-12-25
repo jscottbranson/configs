@@ -1,5 +1,5 @@
 # configs
-[Configs] is a directory that contains configuration files for Vim, Tmux, and R, as well as a script to automatically create symbolic links to the configuration files in the users home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R], which is set to be automatically installed by [Vundle].
+[Configs] is a directory that contains configuration files for Vim, Tmux, and R, as well as a script to automatically create symbolic links to the configuration files in the user's home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R], which is set to be automatically installed by [Vundle].
 
 ##Synopsis
 This purpose of this project is to provide a consistent set of configuration
@@ -11,21 +11,21 @@ multiple computers.
 The following steps are targeted toward Debian users. You must have super-user
 privileges to install software using apt-get.
 
-1. Git is required for installation:
+1. Git is required for installation:  
 	```bash
 	apt-get install git
 	```
-2. Vim is a text editor that can interface with R using [Nvim-R]
+2. Vim is a text editor that can interface with R using [Nvim-R]:  
 	```bash
 	apt-get install vim
 	```
 
-3. R is required for statistical analyses
+3. R is required for statistical analyses:  
 	```bash
 	apt-get install r-base
 	```
 
-4. Tmux adds a number of features to the terminal editor:
+4. Tmux adds a number of features to the terminal editor:  
 	```bash
 	apt-get install tmux
 	```
