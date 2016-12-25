@@ -8,6 +8,9 @@ multiple computers.
 
 ## Installation
 ### Required Software
+The following steps are targeted toward Debian users. You must have super-user
+privileges to install software using apt-get.
+
 1. Git is required for installation:
 	```bash
 	apt-get install git
@@ -22,7 +25,7 @@ multiple computers.
 	apt-get install r-base
 	```
 
-4. Tmux adds a number of features to the terminal editor. To install Tmux on a Debian based system, as a super user:
+4. Tmux adds a number of features to the terminal editor:
 	```bash
 	apt-get install tmux
 	```
