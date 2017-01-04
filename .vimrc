@@ -24,19 +24,21 @@ call vundle#end()
 
 "Convenience Options
 set encoding=utf-8			"Use utf-8 as default encoding
+set t_Co=256				"Enable 256 bit color
 set background=dark			"Tells Vim that the background color is black
 filetype indent plugin on	"Automatic detection, indenting, and highlighting based on file type
 syntax enable				"Turns on syntax highlighting
-colorscheme default			"Defines the scheme for syntax highlighting
+colorscheme southernlights	"Defines the scheme for syntax highlighting
 set nocompatible			"Use Vim defaults
 set wildmenu				"Automatically complete :commands by pressing tab
 set cmdheight=2				"Set the command line height to two lines
 set number					"Always show line numbers
 set showmatch				"Briefly jump to matching bracket when a new one is inserted
+
+"Spell Check
 set spell					"Enable spell check
 hi clear SpellBad			"Don't highlight misspelled words
-	"Changes misspelled words to underlined, bold, red text
-hi SpellBad cterm=underline,bold ctermfg=red
+hi SpellBad cterm=underline,bold ctermfg=red "Changes misspelled words to underlined, bold, red text
 
 "Searching
 set wrapscan				"Continue searching at top of document after bottom is reached
