@@ -41,7 +41,7 @@ privileges to install software using apt-get.
 1. Clone the repository into your local home directory:
 
 	```bash
-	git clone https://github.com/jscottbranson/configs ~/configs
+	git clone https://github.com/jscottbranson/configs.git ~/configs
 	```
 
 2. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
