@@ -33,7 +33,10 @@ set wildmenu				"Automatically complete :commands by pressing tab
 set cmdheight=2				"Set the command line height to two lines
 set number					"Always show line numbers
 set showmatch				"Briefly jump to matching bracket when a new one is inserted
-setlocal spell				"Enable spell check
+set spell					"Enable spell check
+hi clear SpellBad			"Don't highlight misspelled words
+	"Changes misspelled words to underlined, bold, red text
+hi SpellBad cterm=underline,bold ctermfg=red
 
 "Searching
 set wrapscan				"Continue searching at top of document after bottom is reached
