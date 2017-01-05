@@ -32,7 +32,8 @@ colorscheme southernlights	"Defines the scheme for syntax highlighting
 set nocompatible			"Use Vim defaults
 set wildmenu				"Automatically complete :commands by pressing tab
 set cmdheight=2				"Set the command line height to two lines
-set number					"Always show line numbers
+set number					"Always show the line numbers.
+set relativenumber			"Show relative line numbers.
 set showmatch				"Briefly jump to matching bracket when a new one is inserted
 
 "Spell Check
@@ -42,8 +43,8 @@ hi SpellBad cterm=underline,bold ctermfg=red "Changes misspelled words to underl
 
 "Searching
 set wrapscan				"Continue searching at top of document after bottom is reached
-set incsearch				"Highlights search results while typing
 set hlsearch				"Highlights all instances of searched string
+set incsearch				"Highlights search results while typing
 set ignorecase				"Case insensitive searching
 set smartcase				"Case sensitive searching when search string has upper case
 set infercase				"Fixes the case of automatically completed keywords
