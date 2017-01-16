@@ -17,10 +17,10 @@ privileges to install software using apt-get.
 	apt-get install git
 	```
 
-2. Vim is a text editor that can interface with R using [Nvim-R]:
+2. Vim and NeoVim are text editors that can interface with R using [Nvim-R]. NeoVim offers the ability to run an R console inside of NeoVim. By default, the install script will link NeoVim to an existing ~/.vim folder as well as the .vimrc configuration file contained in this directory:
 
 	```bash
-	apt-get install vim
+	apt-get install [vim] [neovim]
 	```
 
 3. R is required for statistical analyses:

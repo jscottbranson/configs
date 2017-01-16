@@ -67,3 +67,7 @@ nnoremap <space> za
 	"(html) then runs a particular command (setlocal ...)
 
 au FileType html,css setlocal tabstop=2 softtabstop=2 shiftwidth=2 tw=80
+
+"R
+"To run R outside of nvim's terminal emulator
+"let R_in_buffer = 0
