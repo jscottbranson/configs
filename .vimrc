@@ -67,7 +67,11 @@ nnoremap <space> za
 "au is an autocommand that watches for events (FileType) that match patterns
 	"(html) then runs a particular command (setlocal ...)
 
+"HTML
 au FileType html,css setlocal tabstop=2 softtabstop=2 shiftwidth=2 tw=80
+
+"Python
+au FileType py setlocal tabstop=4 softtabstop=4 shiftwidth=4 tw=80
 
 "R
 "
