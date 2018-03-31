@@ -46,7 +46,7 @@ privileges to install software using apt-get.
 2. Clone the repository into your local home directory:
 
 	```bash
-	git clone https://github.com/jscottbranson/configs.git ~/.configs
+	git clone https://github.com/crypticrabbit/configs.git ~/.configs
 	```
 
 3. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
@@ -101,6 +101,6 @@ Anyone is free to use, modify, and distribute any of these files.
 Continue to update these configuration files to maximize efficiency for data
 analysis and editing HTML, CSS, Python, and other files.
 
-[configs]:https://github.com/jscottbranson/configs
+[configs]:https://github.com/crypticrabbit/configs
 [Vundle]:https://github.com/VundleVim/Vundle.vim
 [Nvim-R]:https://github.com/jalvesaq/Nvim-R
