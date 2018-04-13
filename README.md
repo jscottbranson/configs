@@ -1,7 +1,7 @@
 # configs
 [Configs] is a directory that contains configuration files for Vim, Tmux, and R, as well as a script to automatically create symbolic links to the configuration files in the user's home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R], which is set to be automatically installed by [Vundle].
 
-##Synopsis
+## Synopsis
 This purpose of this project is to provide a consistent set of configuration
 files for terminal applications, such as Vim, Tmux, and R, that I can access from
 multiple computers.
@@ -37,7 +37,7 @@ privileges to install software using apt-get.
 
 5. [Vundle] is required to install the plugins in the .vimrc configuration file.
 
-###Installation Steps
+### Installation Steps
 1. Make a directory to house the configuration files:
 	```bash
 	mkdir ~/.configs
@@ -73,12 +73,12 @@ privileges to install software using apt-get.
 	ls -a ~/.configs/
 	```
 
-###Post Install Steps
+### Post Install Steps
 1. Install the Vim plugins:
 
 	Launch `vim` and run `:PluginInstall`
 
-##Editing Configuration Files
+## Editing Configuration Files
 To edit a configuration file, navigate to the ~/configs directory:
 
 ```bash
@@ -94,10 +94,10 @@ vim .file_name
 Change *.file_name* to the name of the configuration file you would like to
 edit.
 
-##License
+## License
 Anyone is free to use, modify, and distribute any of these files.
 
-##Future Plans
+## Future Plans
 Continue to update these configuration files to maximize efficiency for data
 analysis and editing HTML, CSS, Python, and other files.
 
