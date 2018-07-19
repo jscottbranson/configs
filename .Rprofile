@@ -1,5 +1,10 @@
+print("Custom .Rprofile loaded")
+
 #Set library location to home directory
 .libPaths("~/R/libs")
+
+#Uncomment the following line if colorout is installed
+#library(colorout)
 
 #General options
 options(tab.width = 2)
@@ -11,3 +16,4 @@ local({
 	r["CRAN"] <- "https://cran.mtu.edu"
 	options(repos = r)
 })
+

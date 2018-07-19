@@ -7,9 +7,13 @@ files for terminal applications, such as Vim, Tmux, and R, that I can access fro
 multiple computers.
 
 ## Installation
+### R install.packages()
+System wide R configuration files may need to be edited so install.packages() installs to /home/username/R/libs or a similar directory in the user's home folder. On Linux systems, the system wide config is in /usr/lib64/R/etc/Renviron
+
 ### Required Software
 The following steps are targeted toward Debian users. You must have super-user
-privileges to install software using apt-get.
+privileges to install software using apt-get. Fedora/RHEL users should replace apt-get with dnf or yum.
+
 
 1. Git is required for installation:
 
@@ -77,6 +81,11 @@ privileges to install software using apt-get.
 1. Install the Vim plugins:
 
 	Launch `vim` and run `:PluginInstall`
+
+### Extras
+R output can be color coded using the colorout package. To install colorout:
+1. git clone https://github.com/jalvesaq/colorout.git
+2. R CMD INSTALL colorout
 
 ## Editing Configuration Files
 To edit a configuration file, navigate to the ~/configs directory:
