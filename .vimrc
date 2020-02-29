@@ -16,6 +16,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'jalvesaq/Nvim-R'
 Plugin 'ervandew/screen'
 Plugin 'jalvesaq/southernlights'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()
 "End list of plugins and Vundle
@@ -28,7 +29,7 @@ set encoding=utf-8			"Use utf-8 as default encoding
 set t_Co=256				"Enable 256 bit color
 set background=dark			"Tells Vim that the background color is black
 filetype indent plugin on	"Automatic detection, indenting, and highlighting based on file type
-syntax enable				"Turns on syntax highlighting
+syntax on					 "Turns on syntax highlighting
 colorscheme southernlights	"Defines the scheme for syntax highlighting
 set nocompatible			"Use Vim defaults
 set wildmenu				"Automatically complete :commands by pressing tab
@@ -61,6 +62,11 @@ set tabstop=4				"Number of characters that a tab is displayed as
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
+
+"Indent guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size=1
+let g:indent_guides_start_level=2
 
 "------------------------------------------------------------------------------
 "Settings for Specific File Types
