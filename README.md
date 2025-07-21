@@ -80,8 +80,7 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 ### Post Install Steps
 1. Install the Vim plugins:
 
-	Launch `vim` and run `:PlugInstall`
-	Plugins can be updated by running `:PlugInstall` inside Vim
+	Launch `vim` and run `:PlugInstall`. Plugins can be updated by running `:PlugInstall` inside Vim.
 
 ### Extras
 R output can be color coded using the colorout package. To install colorout:
