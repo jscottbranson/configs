@@ -1,25 +1,29 @@
-"Vundle
-"Sets the runtime path to include and initialize Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"______________________________________________________________________________
+"Plug to manage plugins
+"Update Plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-"List plugins here - new plugins will be installed after listing them here
-"then running :PluginInstall in vim
-Plugin 'gmarik/Vundle.vim'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'othree/html5.vim'
-Plugin 'nvie/vim-flake8'
-Plugin 'scrooloose/nerdtree'
-"Plugin 'scrooloose/syntastic'
-Plugin 'w0rp/ale'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'jalvesaq/Nvim-R'
-Plugin 'ervandew/screen'
-Plugin 'jalvesaq/southernlights'
-Plugin 'nathanaelkane/vim-indent-guides'
+":PlugInstall to install
+":PlugUpdate to update
+":PlugClean to remove unused plugins
+call plug#begin()
 
-call vundle#end()
-"End list of plugins and Vundle
+"Plugins
+Plug 'junegunn/vim-plug'
+Plug 'dense-analysis/ale'
+Plug 'sheerun/vim-polyglot'
+Plug 'jalvesaq/southernlights'
+Plug 'jalvesaq/Nvim-R'
+
+call plug#end()
+
+"Enable ale linting
+let g:ale_linters = {'python': ['pylint']}
+
 
 "------------------------------------------------------------------------------
 "General Settings
@@ -29,14 +33,15 @@ set encoding=utf-8			"Use utf-8 as default encoding
 set t_Co=256				"Enable 256 bit color
 set background=dark			"Tells Vim that the background color is black
 filetype indent plugin on	"Automatic detection, indenting, and highlighting based on file type
-syntax on					 "Turns on syntax highlighting
-colorscheme southernlights	"Defines the scheme for syntax highlighting
+syntax enable				"Turns on syntax highlighting
 set nocompatible			"Use Vim defaults
 set wildmenu				"Automatically complete :commands by pressing tab
 set cmdheight=2				"Set the command line height to two lines
 set number					"Always show the line numbers.
 set relativenumber			"Show relative line numbers.
 set showmatch				"Briefly jump to matching bracket when a new one is inserted
+
+colorscheme southernlights
 
 "Spell Check
 set spell					"Enable spell check
@@ -62,11 +67,6 @@ set tabstop=4				"Number of characters that a tab is displayed as
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
-
-"Indent guides
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_guide_size=1
-let g:indent_guides_start_level=2
 
 "------------------------------------------------------------------------------
 "Settings for Specific File Types
