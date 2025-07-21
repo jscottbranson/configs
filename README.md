@@ -1,5 +1,5 @@
 # configs
-[Configs] is a directory that contains configuration files for Vim, Tmux, and R, as well as a script to automatically create symbolic links to the configuration files in the user's home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R], which is set to be automatically installed by [Vundle].
+[Configs] is a directory that contains configuration files for Vim, Tmux, and R, as well as a script to automatically create symbolic links to the configuration files in the user's home directory. These configuration files are targeted toward users who want to use Vim to edit R, html, css, and Python3 files. Additional functionality for running R within a Vim session is available through [Nvim-R], which is set to be automatically installed by [Vim-Plug].
 
 ## Synopsis
 This purpose of this project is to provide a consistent set of configuration
@@ -27,7 +27,7 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 	apt-get install [vim] [neovim]
 	```
 
-3. R is required for statistical analyses:
+3. R is is used for advanced statistical analyses:
 
 	```bash
 	apt-get install r-base
@@ -39,7 +39,7 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 	apt-get install tmux
 	```
 
-5. [Vundle] is required to install the plugins in the .vimrc configuration file.
+5. [Vim-Plug] is required to install the plugins in the .vimrc configuration file.
 
 ### Installation Steps
 1. Make a directory to house the configuration files:
@@ -50,7 +50,7 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 2. Clone the repository into your local home directory:
 
 	```bash
-	git clone https://github.com/crypticrabbit/configs.git ~/.configs
+	git clone https://github.com/jscottbranson/configs.git ~/.configs
 	```
 
 3. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
@@ -80,7 +80,8 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 ### Post Install Steps
 1. Install the Vim plugins:
 
-	Launch `vim` and run `:PluginInstall`
+	Launch `vim` and run `:PlugInstall`
+	Plugins can be updated by running `:PlugInstall` inside Vim
 
 ### Extras
 R output can be color coded using the colorout package. To install colorout:
@@ -110,6 +111,6 @@ Anyone is free to use, modify, and distribute any of these files.
 Continue to update these configuration files to maximize efficiency for data
 analysis and editing HTML, CSS, Python, and other files.
 
-[configs]:https://github.com/crypticrabbit/configs
-[Vundle]:https://github.com/VundleVim/Vundle.vim
+[configs]:https://github.com/jscottbranson/configs
+[Vim-Plug]:https://github.com/junegunn/vim-plug
 [Nvim-R]:https://github.com/jalvesaq/Nvim-R
