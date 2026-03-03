@@ -53,11 +53,11 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 	git clone https://github.com/jscottbranson/configs.git ~/.configs
 	```
 
-3. Create symlinks in your home directory to each of the dot files in the ~/configs/ directory that you would like to use:
+3. Create symlinks in your home directory to each of the files in the ~/configs/ directory that you would like to use:
 
 	* To automatically create symbolic links:  
 	```bash
-  	bash ~/.configs/link_maker
+  	bash ~/configs/link_maker
     ```
 
 		Note that this script will automatically overwrite any existing configuration
@@ -66,7 +66,7 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 	* To manually create symbolic links:
 
     ```bash
-    ln -s ~/.configs/.file_name ~/.file_name
+    ln -s ~/configs/file_name ~/.file_name
     ```
 
 		Replace *.file_name* with the name of the dot file you would like to use.
@@ -74,7 +74,7 @@ privileges to install software using apt-get. Fedora/RHEL users should replace a
 		* To view all of the prospective configuration files:
 
 	```bash
-	ls -a ~/.configs/
+	ls -a ~/configs/
 	```
 
 ### Post Install Steps
@@ -88,28 +88,7 @@ R output can be color coded using the colorout package. To install colorout:
 2. R CMD INSTALL colorout
 
 ## Editing Configuration Files
-To edit a configuration file, navigate to the ~/configs directory:
-
-```bash
-cd ~/.configs/
-```
-
-Then use a text editor to edit the necessary configuration files:
-
-```bash
-vim .file_name
-```
-
-Change *.file_name* to the name of the configuration file you would like to
-edit.
+Is a good idea :). You might not need all the plugins, for example, Claude integration in nvim.
 
 ## License
 Anyone is free to use, modify, and distribute any of these files.
-
-## Future Plans
-Continue to update these configuration files to maximize efficiency for data
-analysis and editing HTML, CSS, Python, and other files.
-
-[configs]:https://github.com/jscottbranson/configs
-[Vim-Plug]:https://github.com/junegunn/vim-plug
-[Nvim-R]:https://github.com/jalvesaq/Nvim-R
