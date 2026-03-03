@@ -88,7 +88,11 @@ R output can be color coded using the colorout package. To install colorout:
 2. R CMD INSTALL colorout
 
 ## Editing Configuration Files
-Is a good idea :). You might not need all the plugins, for example, Claude integration in nvim.
+Is a good idea :)
+
+You might not need all the plugins.
+
+I'm not responsible for the security of third party plugins.
 
 ## License
 Anyone is free to use, modify, and distribute any of these files.

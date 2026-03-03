@@ -8,7 +8,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- FIX: termguicolors must be set before any plugin that depends on it (e.g. colorizer)
+-- termguicolors must be set before any plugin that depends on it (e.g. colorizer)
 vim.opt.termguicolors = true
 
 -- Bootstrap lazy.nvim
@@ -131,11 +131,7 @@ require("lazy").setup({
 
   -- Colorschemes
   { "folke/tokyonight.nvim", priority = 1000 },
-  { "jalvesaq/southernlights" },
 
-  -- From original (consider removing vim-polyglot if you see conflicts)
-  { "sheerun/vim-polyglot" },
-  { "jalvesaq/Nvim-R" },
 })
 
 -- =============================================================================
